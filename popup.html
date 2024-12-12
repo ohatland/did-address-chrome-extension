@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>DID Manager</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+    }
+    .address-item {
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ddd;
+      margin: 5px 0;
+    }
+    .address-item:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>DID-adresser</h1>
+  <div id="addressList"></div>
+  
+  <h2>Legg til ny DID-adresse</h2>
+  <input type="text" id="nameInput" placeholder="Navn på adressen">
+  <input type="text" id="didInput" placeholder="did:example:...">
+  <button id="addButton">Legg til</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

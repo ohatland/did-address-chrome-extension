@@ -1,9 +1,8 @@
 let didButton = null;
-const didField = document.querySelector('input[type="did"]');
 
 // Funksjon for å opprette eller oppdatere knappen
 function createOrUpdateDidButton() {
-  // const didField = document.querySelector('input[type="did"]');
+  const didField = document.querySelector('input[type="did"]');
   // Hvis feltet ikke finnes, fjern knappen hvis den eksisterer, og returner
   if (!didField) {
     if (didButton && didButton.parentNode) {
@@ -143,6 +142,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 // Lytt til vinduets størrelsesendringer og oppdater knappens posisjon
 window.addEventListener('resize', () => {
+  const didField = document.querySelector('input[type="did"]');
   if (didField) {
     styleAndPositionButton(didField, didButton);
   }
